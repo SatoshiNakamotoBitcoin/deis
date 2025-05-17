@@ -38,3 +38,5 @@ cp $pn/src/deis/share/icons/pixmaps/* $hp/bitcoin_github/share/pixmaps/*
     done
     
 fi
+
+Now that the image files and the relevant text strings have been modified in the source code, you can compile as normal. Set --with-gui="yes" to also compile QT.
