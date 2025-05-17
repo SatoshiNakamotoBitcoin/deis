@@ -1,5 +1,6 @@
 # Bitcoin Deis
 =====================================
+
 To build Bitcoin Deis, either install it using Parmanode (make a selection for Deis when prompted during Bitcoin installation), or
 clone Bitcoin core (a fork provided here in this repo), and modify before compiling (with GUI).
 
