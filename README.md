@@ -41,6 +41,6 @@ fi
 
 Now that the image files and the relevant text strings have been modified in the source code, you can compile as normal. Set --with-gui="yes" to also compile QT.
 
-More information on why you shouod rum a node:
+More information on why you should run a node:
 
 https://armantheparman.com/6reasonsnode
