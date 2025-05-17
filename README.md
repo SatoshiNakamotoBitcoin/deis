@@ -7,22 +7,35 @@ clone Bitcoin core (a fork provided here in this repo), and modify before compil
 The relevent BASH code in Parmanode is (run just before compiling, after cloning repository):
 
 export hp=$HOME/parmanode
+
 export pn=$HOME/parman_programs/parmanode
+
 git clone https://github.com/bitcoin/bitcoin $hp/bitcon_github
+
 #alternatively, you can clone from this fork
+
 #git clone https://github.com/armantheparman/deis $hp/bitcoin_github
+
 if [[ $deis == "true" ]] ; then
+
 #res/icons
+
 cp $pn/src/deis/icons/deis.png $hp/bitcoin_github/src/qt/res/icons/bitcoin.png
 cp $pn/src/deis/icons/deis.ico $hp/bitcoin_github/src/qt/res/icons/bitcoin.ico
+
 #svg
 cp $pn/src/deis/deis.svg $hp/bitcoin_github/src/qt/res/src/bitcoin.svg
+
 #doc
 cp $pn/src/deis/share/icons/pixmaps/bitcoin64.png $hp/bitcoin_github/doc/bitcoin_logo_doxygen.png
+
 #share/pixmaps
 rm $hp/bitcoin_github/share/pixmaps/*
+
 cp $pn/src/deis/share/icons/pixmaps/* $hp/bitcoin_github/share/pixmaps/*
+
     for file in $(find $hp/bitcoin_github -type f) ; do
         gsed -i "s/Bitcoin Core/Bitcoin Deis/g" $file
+    
     done
 fi
