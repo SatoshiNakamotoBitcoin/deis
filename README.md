@@ -6,6 +6,8 @@ clone Bitcoin core (a fork provided here in this repo), and modify before compil
 
 The relevent BASH code in Parmanode is (run just before compiling, after cloning repository):
 
+deis="true" #selection flag in earlier menus
+
 export hp=$HOME/parmanode
 
 export pn=$HOME/parman_programs/parmanode
