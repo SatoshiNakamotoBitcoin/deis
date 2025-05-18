@@ -66,7 +66,7 @@ std::string FormatSubVersion(const std::string& name, int nClientVersion, const 
 {
     std::string comments_str;
     if (!comments.empty()) comments_str = strprintf("(%s)", Join(comments, "; "));
-    return strprintf("/%s:%s%s/pure", name, FormatVersion(nClientVersion), comments_str);
+    return strprintf("/%s:%s%s/PURE", name, FormatVersion(nClientVersion), comments_str);
 }
 
 std::string CopyrightHolders(const std::string& strPrefix)
