@@ -1,4 +1,4 @@
-            - name: Horus
+  name: Horus
   uses: actions/download-artifact@v4.3.0
   with:
     # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
