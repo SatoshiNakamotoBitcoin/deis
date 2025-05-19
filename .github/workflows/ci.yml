@@ -126,6 +126,7 @@ jobs:
           # See: https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes
           sudo xcode-select --switch /Applications/Xcode_15.0.app
           clang --version
+          brew update
 
       - name: Install Homebrew packages
         env:
