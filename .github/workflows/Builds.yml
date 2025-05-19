@@ -1,0 +1,30 @@
+name: Builds
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: yarn --frozen-lockfile
+      - run: npm install --global pkg
+      - name: Build
+        run: pkg index.js --output lgo-agisoft-converter --targets linux,macos,win
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            lgo-agisoft-converter-linux
+            lgo-agisoft-converter-macos
+            lgo-agisoft-converter-win.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
