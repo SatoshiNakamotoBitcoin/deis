@@ -52,8 +52,8 @@ set(CMAKE_TRY_COMPILE_PLATFORM_VARIABLES
 
 project(BitcoinCore
   VERSION ${CLIENT_VERSION_MAJOR}.${CLIENT_VERSION_MINOR}.${CLIENT_VERSION_BUILD}
-  DESCRIPTION "Bitcoin client software"
-  HOMEPAGE_URL "https://bitcoincore.org/"
+  DESCRIPTION "Bitcoin PURE client software"
+  HOMEPAGE_URL "https://github.com/SatoshiNakamotoBitcoin/Pure"
   LANGUAGES NONE
 )
 
@@ -62,9 +62,9 @@ if(CLIENT_VERSION_RC GREATER 0)
   string(APPEND CLIENT_VERSION_STRING "rc${CLIENT_VERSION_RC}")
 endif()
 
-set(COPYRIGHT_HOLDERS "The %s developers")
-set(COPYRIGHT_HOLDERS_FINAL "The ${CLIENT_NAME} developers")
-set(CLIENT_BUGREPORT "https://github.com/bitcoin/bitcoin/issues")
+set(COPYRIGHT_HOLDERS "The %s Hackers")
+set(COPYRIGHT_HOLDERS_FINAL "The ${CLIENT_NAME} Hackers")
+set(CLIENT_BUGREPORT "https://github.com/SatoshiNakamotoBitcoin/Pure/pulls")
 
 #=============================
 # Language setup
@@ -95,7 +95,7 @@ endif()
 include(CMakeDependentOption)
 # When adding a new option, end the <help_text> with a full stop for consistency.
 option(BUILD_DAEMON "Build bitcoind executable." ON)
-option(BUILD_GUI "Build bitcoin-qt executable." OFF)
+option(BUILD_GUI "Build bitcoin-qt executable." ON)
 option(BUILD_CLI "Build bitcoin-cli executable." ON)
 
 option(BUILD_TESTS "Build test_bitcoin and other unit test executables." ON)
