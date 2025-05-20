@@ -12,6 +12,7 @@ cmake --build build    # use "-j N" for N parallel jobs
 cmake --install build  # optional
 ```
 <h1 align="center">-------------------------------------------------------------------</h1>
+
 ```bash
 git clone https://github.com/SatoshiNakamotoBitcoin/Pure.git
 cd Pure
