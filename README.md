@@ -5,12 +5,14 @@
 <h1 align="center">-------------------------------------------------------------------</h1>
 <h1 align="center">𓆩𓆣𓆪 Bitcoin Pure 𓆩𓆣𓆪</h1>
 <h1 align="center">-------------------------------------------------------------------</h1>
-#
+<h1 align="center">
+
 ```
 cmake -B build
 cmake --build build    # use "-j N" for N parallel jobs
 cmake --install build  # optional
 ```
+</h1>
 <h1 align="center">-------------------------------------------------------------------</h1>
 ```bash
 git clone https://github.com/SatoshiNakamotoBitcoin/Pure.git
@@ -21,7 +23,8 @@ make
 sudo make install
 ```
 <h1 align="center">-------------------------------------------------------------------</h1>
-
+<h1 align="center">
+    
 ```bash
        ,_    /) (\    _,
         >>  <<,_,>>  <<
@@ -39,4 +42,5 @@ sudo make install
          \\         //
           ':.     .:'
 ```
+</h1>
 <h1 align="center">-------------------------------------------------------------------</h1>
