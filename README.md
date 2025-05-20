@@ -5,7 +5,7 @@
 <h1 align="center">-------------------------------------------------------------------</h1>
 <h1 align="center">𓆩𓆣𓆪 Bitcoin Pure 𓆩𓆣𓆪</h1>
 <h1 align="center">-------------------------------------------------------------------</h1>
-```bash
+```
 cmake -B build
 cmake --build build    # use "-j N" for N parallel jobs
 cmake --install build  # optional
