@@ -1,9 +1,8 @@
+<h1 align="center">𓆩𓆣𓆪</h1>
 <h1 align="center">-------------------------------------------------</h1>
 <p align="center">
     <img width="700" src="https://github.com/user-attachments/assets/32389b70-96f8-4b37-987b-317a92a7e6a4" alt="We Are Watching You!!!">
 </p>
-<h1 align="center">-------------------------------------------------</h1>
-<h1 align="center">𓆩𓆣𓆪</h1>
 <h1 align="center">-------------------------------------------------</h1>
 
 ```
